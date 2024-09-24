@@ -13,37 +13,58 @@
     <script>
         // config styles 
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                
-                btn_primary:'#FF0000',
-                btn_secondary:'#FF8938',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+
+                        btn_primary: '#FF0000',
+                        btn_secondary: '#FF8938',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
 </head>
 
 <body class="max-w-6xl mx-auto">
-    <header class="flex flex-col-reverse md:flex-row lg:flex-row items-center lg:border-x-2 border-x-gray-700 px-12 my-8">
+    <nav>
+
+    </nav>
+    <header
+        class="flex flex-col-reverse md:flex-row lg:flex-row items-center lg:border-x-2 border-x-gray-700 px-12 my-8">
         <div class="flex-col  items-center flex-1 ">
             <div class="flex flex-col items-start gap-3">
                 <h1 class="text-6xl font-bold text-white">
                     It's good <br>
                     tea time at The <br>
                     <span class=" ">
-                     Tea Cafe
+                        Tea Cafe
                     </span>
                 </h1>
-                <p>Tea and Botanical Solutions Supplier Give Optimum <br class=" text-gradient-to-r from-sky-500 to-indigo-500" >Satisfaction To Your Taste Buds.</p>
-                <button class="btn bg-gradient-to-r from-btn_primary to-btn_secondary">Explore More</button>
+                <p>Tea and Botanical Solutions Supplier Give Optimum <br
+                        class=" text-gradient-to-r from-sky-500 to-indigo-500">Satisfaction To Your Taste Buds.</p>
+
+
+                <button class="btn bg-gradient-to-r from-btn_primary to-btn_secondary text-white">Explore More
+                    <img class="w-3" src="/images/arrow.png" alt="">
+                </button>
+
             </div>
         </div>
-        <div class="flex items-center flex-1">
-            <img src="images/banner.png" alt="">
+        <div class="flex items-center flex-col flex-1">
+            <div class="">
+                <img src="images/banner.png" alt="">
+            </div>
+            <div class="flex items-center -mt-28 mr-52 bg-white text-black px-6 py-4 rounded-md">
+                <div class="">
+                    <img class="w-8 mr-4" src="images/star.png" alt="">
+                </div>
+                <div class="">
+                    <h2 class="text-2xl font-bold">5.00</h2>
+                    <p>Trust Pilot Ratings</p>
+                </div>
+            </div>
         </div>
     </header>
     <main>
