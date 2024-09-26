@@ -8,6 +8,10 @@
     <link rel="shortcut icon" href="images/banner.png" type="image/x-icon">
     <!-- daisy CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!-- manrope google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <!-- tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -25,14 +29,21 @@
             }
         }
     </script>
+    <style>
+        /* <uniquifier>: Use a unique and descriptive class name */
+        /* <weight>: Use a value from 200 to 800 */
+
+        .manrope {
+            font-family: "Manrope", system-ui;
+        }
+    </style>
 </head>
 
-<body class="max-w-6xl mx-auto">
+<body class="mx-auto manrope">
     <nav>
 
     </nav>
-    <header
-        class="flex flex-col-reverse md:flex-row lg:flex-row items-center lg:border-x-2 border-x-gray-700 px-12 my-8">
+    <header class="max-w-6xl mx-auto flex flex-col-reverse md:flex-row lg:flex-row items-center lg:border-x-2 border-x-gray-700 my-8">
         <div class="flex-col  items-center flex-1 ">
             <div class="flex flex-col items-start gap-3">
                 <h1 class="text-6xl font-bold text-white">
